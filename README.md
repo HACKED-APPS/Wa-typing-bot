@@ -33,13 +33,13 @@ Follow these steps to get your bot up and running on a PC/Mac/Linux machine.
 Open your terminal and clone this repository to your local machine.
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+https://github.com/HACKED-APPS/Wa-typing-bot.git
 ```
 
 **2. Navigate to the Project Directory**
 
 ```bash
-cd your-repository-name
+cd Wa-typing-bot
 ```
 
 **3. Install Dependencies**
@@ -103,13 +103,13 @@ pkg install nodejs git -y
 Clone this project into your Termux home directory.
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+https://github.com/HACKED-APPS/Wa-typing-bot.git
 ```
 
 **5. Navigate and Install Dependencies**
 
 ```bash
-cd your-repository-name
+cd Wa-typing-bot
 npm install
 ```
 
