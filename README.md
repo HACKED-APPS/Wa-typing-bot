@@ -121,12 +121,6 @@ termux-wake-lock node bot.js
 ```
 The authentication process (Pairing Code) is the same as on desktop. The code will be displayed directly in your Termux terminal. The bot will now run continuously as long as your Termux session is active.
 
-## 🔧 How It Works
-
--   **Chat Management**: The bot uses a `Set` called `chatIds` to store the unique IDs (`JID`) of all your chats. This prevents duplicates and allows for efficient management.
--   **Typing Loop**: A `setInterval` runs the `startTypingLoop` function every 5 seconds.
--   **Parallel Updates**: Inside the loop, `Promise.allSettled` is used to send a `sendPresenceUpdate('composing', ...)` request to *every* chat ID in the `chatIds` set at the same time. `allSettled` ensures that even if one request fails (e.g., you were removed from a group), it doesn't stop the other updates.
--   **Error Handling**: If an update fails with a 404 (Not Found) error, the bot assumes the chat no longer exists and removes it from the `chatIds` list.
 
 ## ⚠️ Disclaimer
 
